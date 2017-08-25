@@ -1,0 +1,16 @@
+Package: MesFonctions
+Title: A few functions for linear models
+Version: 0.0.0.9000
+Authors@R: person("Gilles", "Lamothe", email = "first.last@example.com", role = c("aut", "cre"))
+Description: A few function for linear models. 
+Depends: R (>= 3.4.1)
+License: MIT + file LICENSE
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: testthat,
+    knitr,
+    rmarkdown
+Imports: stats
+VignetteBuilder: knitr
+URL: https://github.com/LamotheGilles/MesFonctions
+BugReports: https://github.com/LamotheGilles/MesFonctions/issues
