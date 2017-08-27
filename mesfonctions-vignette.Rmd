@@ -1,0 +1,52 @@
+---
+title: "MesFonctions-Vignette"
+author: "Gilles Lamothe"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{MesFonctions-Vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Computing the residual sum of squares via `RSS()`:
+
+```{r}
+x<-runif(1:20)
+y<-2+3*x+rnorm(20,0,5)
+fit<-lm(y~x)
+library(MesFonctions)
+RSS(fit)
+```
+
+Computing the residual sum of squares via `RSS()`:
+
+```{r}
+x<-runif(1:20)
+y<-2+3*x+rnorm(20,0,5)
+fit<-lm(y~x)
+library(MesFonctions)
+RSS(fit)
+```
+
+Computing Allen's PRESS to compare a few linear models  `PRESS()`:
+
+```{r}
+x<-runif(1:20)
+y<-2+3*x+rnorm(20,0,5)
+fit<-lm(y~x)
+y<-2+5*x+rnorm(20,0,5)
+fit2<-lm(y~x)
+library(MesFonctions)
+PRESS(fit,fit2)
+```
+
+
+
+
+
+
+
+
+
+
